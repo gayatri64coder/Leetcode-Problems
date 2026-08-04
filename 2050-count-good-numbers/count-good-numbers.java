@@ -54,7 +54,7 @@ class Solution {
 
         // If exponent is odd, multiply by base one more time
         if (exp % 2 != 0) {
-            return (halfSquared * base) % MOD;
+            return (halfSquared * (base % MOD)) % MOD;
         }
 
         return halfSquared;
