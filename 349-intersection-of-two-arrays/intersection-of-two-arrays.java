@@ -9,7 +9,6 @@ class Solution {
         for(int j = 0; j< nums2.length ;j++){
             if(ans.contains(nums2[j])){
                 arr.add(nums2[j]);
-                ans.remove(nums2[j]);
             } 
         }
         int[] result = new int[arr.size()];
