@@ -1,7 +1,12 @@
 class Solution {
+    public int[] sortArray(int[] nums) {
+        divide(nums, 0, nums.length -1);
+        return nums;
+    }
     private void divide(int[] nums , int start , int end){
+        
         if(start < end){
-            int mid = start +(end-start)/2;
+            int mid = start +(end-start) /2;
             divide(nums, start , mid);
             divide (nums, mid+1 , end);
 
@@ -32,8 +37,5 @@ class Solution {
             nums[i] = temp[k];
         }
     }
-    public int[] sortArray(int[] nums) {
-        divide(nums, 0, nums.length -1);
-        return nums;
-    }
+   
 }
