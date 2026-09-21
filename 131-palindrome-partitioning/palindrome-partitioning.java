@@ -16,11 +16,20 @@ class Solution {
         }
     }
     private boolean ispalindrome(String s){
-        for(int i = 0 , j = s.length()-1 ; i <= j ; i++ ,j--){
+        int i = 0;
+        int j = s.length()-1 ;
+        while(i < j){
             if(s.charAt(i) != s.charAt(j)){
                 return false;
             }
+            i++;
+            j--;
         }
+        /*for(int i = 0 , j = s.length()-1 ; i <= j ; i++ ,j--){
+            if(s.charAt(i) != s.charAt(j)){
+                return false;
+            }
+        }*/
         return true;
 
     }
